@@ -5,7 +5,7 @@ function validateStringNotEmpty(value) {
 }
 
 function validateNumber(number) {
-  if (isNaN(number) || typeof number !== 'number') {
+  if (isNaN(number)) {
     throw new Error('Invalid number input.');
   }
 }
